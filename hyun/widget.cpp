@@ -28,8 +28,10 @@ void Widget::H_Set_Btn(){
 
     gridLayout = new QGridLayout();
     for(int i =0;i<16;i++){
-        pushButton[i]=new QPushButton(ButtonChar[i],this);
-        gridLayout->addWidget(pushButton[i],i/4,i%4);
+        //for(int j =1;j<5;j++)
+          //  printf("%d",i*j);
+            pushButton[i]=new QPushButton(ButtonChar[i],this);
+            gridLayout->addWidget(pushButton[i],i/4,i%4);
     };
 
     for(int i = 0;i<=15;i++){
